@@ -34,7 +34,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpDelete]
-        [Route("Delete")]
+        [Route("Delete/{id}")]
         public IHttpActionResult DeleteProjectById(int id)
         {
             if (id <= 0)

@@ -25,9 +25,9 @@ namespace ProjectMgmt.UnitTest.Harness
             userList.Add(new User
             {
                 UserID = 1,
-                FirstName = "Vinoth",
-                LastName = "Kannan",
-                EmployeeID = "484555",
+                FirstName = "Vediyappan",
+                LastName = "Kumaresan",
+                EmployeeID = "694221",
                 TaskID = 1,
                 ProjectID = 1
             });
@@ -67,9 +67,9 @@ namespace ProjectMgmt.UnitTest.Harness
             var result = controller.CreateUser(new User
             {
                 UserID = 1,
-                FirstName = "Vinoth",
-                LastName = "Kannan",
-                EmployeeID = "484555",
+                FirstName = "Vediyappan",
+                LastName = "Kumar",
+                EmployeeID = "694221",
                 TaskID = 1,
                 ProjectID = 1
             });
@@ -82,9 +82,9 @@ namespace ProjectMgmt.UnitTest.Harness
             var result = controller.UpdateUser(new User
             {
                 UserID = 1,
-                FirstName = "Vinoth",
-                LastName = "Kannan",
-                EmployeeID = "484555",
+                FirstName = "Vediyappan",
+                LastName = "K",
+                EmployeeID = "694221",
                 TaskID = 1,
                 ProjectID = 1
             });

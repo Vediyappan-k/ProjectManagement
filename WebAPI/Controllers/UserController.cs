@@ -31,7 +31,7 @@ namespace WebAPI.Controllers
             return Ok(result);
         }
 
-        [Route("Delete")]
+        [Route("Delete/{id}")]
         public IHttpActionResult DeleteUser(int id)
         {
             if (id <= 0)

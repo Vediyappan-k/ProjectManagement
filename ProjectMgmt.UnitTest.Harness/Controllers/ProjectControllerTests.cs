@@ -35,10 +35,10 @@ namespace ProjectMgmt.UnitTest.Harness
             userList.Add(new User
             {
                 UserID = 1,
-                FirstName = "Vinoth",
-                LastName = "Kumar",
+                FirstName = "Vediyappan",
+                LastName = "K",
                 TaskID = 1,
-                EmployeeID = "484555",
+                EmployeeID = "694221",
                 ProjectID = 1
             });
 

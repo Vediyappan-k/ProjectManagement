@@ -23,7 +23,8 @@ namespace WebAPI.Controllers
             this.userRepository = new Repository<User>();
         }
 
-        [Route("Delete")]
+        [Route("Delete/{id}")]
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         public IHttpActionResult DeleteTask(int id)
         {
             if (id <= 0)
