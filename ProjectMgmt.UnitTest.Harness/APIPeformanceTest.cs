@@ -23,7 +23,7 @@ namespace ProjectMgmt.UnitTest.Harness
 
 
         [TestMethod()]
-        [TestCategory("Perfomance Test")]
+        [Ignore]
         [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput,
             RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
         [CounterThroughputAssertion("TestCounter", MustBe.GreaterThan, 1000)]
@@ -38,7 +38,7 @@ namespace ProjectMgmt.UnitTest.Harness
         }
 
         [TestMethod()]
-        [TestCategory("Perfomance Test")]
+        [Ignore]
         [PerfBenchmark(NumberOfIterations = 3, RunMode = RunMode.Throughput,
            RunTimeMilliseconds = 1000, TestMode = TestMode.Test)]
         [CounterThroughputAssertion("TestCounter", MustBe.GreaterThan, 500)]
