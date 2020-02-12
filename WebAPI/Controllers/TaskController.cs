@@ -119,8 +119,17 @@ namespace WebAPI.Controllers
                 Status = taskModel.Status
               
             };
+            
             taskRepository.Update(task);
+            if (taskModel.UserID.HasValue)
+            {
 
+                var user = userRepository.GetAll().FirstOrDefault(x => x.UserID == taskModel.UserID);
+                user.TaskID = taskModel.TaskID;
+                user.ProjectID = taskModel.ProjectID;
+
+                userRepository.Update(user);
+            }
             return StatusCode(HttpStatusCode.NoContent);
         }
     }
