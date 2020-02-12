@@ -105,8 +105,20 @@ namespace WebAPI.Controllers
 
         [HttpPut]
         [Route("Update")]
-        public IHttpActionResult UpdateTask(Task task)
+        public IHttpActionResult UpdateTask(TaskModel taskModel)
         {
+            var task = new Task
+            {
+                TaskID = taskModel.TaskID,
+                ParentID = taskModel.ParentTaskID,
+                ProjectID = taskModel.ProjectID,
+                Task1 = taskModel.TaskName,
+                StartDate = taskModel.StartDate,
+                EndDate = taskModel.EndDate,
+                Priority = taskModel.Priority,
+                Status = taskModel.Status
+              
+            };
             taskRepository.Update(task);
 
             return StatusCode(HttpStatusCode.NoContent);

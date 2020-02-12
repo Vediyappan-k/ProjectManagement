@@ -142,7 +142,7 @@ namespace ProjectMgmt.UnitTest.Harness
         [TestMethod()]
         public void UpdateTaskTest()
         {
-            Task model = new Task();
+            TaskModel model = new TaskModel();
             var result = controller.UpdateTask(model);
             Assert.IsTrue(true);
 
